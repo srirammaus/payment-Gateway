@@ -2,7 +2,7 @@
 include_once('easebuzz-lib/easebuzz_payment_gateway.php');
 session_start();
 global $j_d;
-$SALT ="KSBKZVZXK7";
+$SALT ="------"; // USE SALT HERE
 //$con = mysqli_connect("localhost", "root", "", "test1") or  die("connection failed".mysqli_errno($con));
 $easebuzzObj = new Easebuzz($MERCHANT_KEY = null
     , $SALT, $ENV = null);
